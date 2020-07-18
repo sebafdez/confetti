@@ -15,6 +15,7 @@
 		09163B2424BFFF7E00D03155 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09163B2224BFFF7E00D03155 /* LaunchScreen.storyboard */; };
 		09163B2F24BFFF7E00D03155 /* confettiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09163B2E24BFFF7E00D03155 /* confettiTests.swift */; };
 		09163B3A24BFFF7E00D03155 /* confettiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09163B3924BFFF7E00D03155 /* confettiUITests.swift */; };
+		09D7807C24C368470093D108 /* ConfettiLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7807B24C368470093D108 /* ConfettiLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		09163B3924BFFF7E00D03155 /* confettiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = confettiUITests.swift; sourceTree = "<group>"; };
 		09163B3B24BFFF7E00D03155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09D7807A24C363D40093D108 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		09D7807B24C368470093D108 /* ConfettiLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				09163B2024BFFF7E00D03155 /* Assets.xcassets */,
 				09163B2224BFFF7E00D03155 /* LaunchScreen.storyboard */,
 				09163B2524BFFF7E00D03155 /* Info.plist */,
+				09D7807B24C368470093D108 /* ConfettiLayer.swift */,
 			);
 			path = confetti;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				09163B1C24BFFF7D00D03155 /* ViewController.swift in Sources */,
 				09163B1824BFFF7D00D03155 /* AppDelegate.swift in Sources */,
 				09163B1A24BFFF7D00D03155 /* SceneDelegate.swift in Sources */,
+				09D7807C24C368470093D108 /* ConfettiLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
