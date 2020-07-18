@@ -20,16 +20,16 @@ class ViewController: UIViewController {
         print("View Load")
         // Do any additional setup after loading the view.
         confetti = ConfettiLayer(view: view)
-        view.layer.addSublayer(confetti!.confettiLayer)
-        self.confetti!.addBehaviors()
+        confetti.startConfetti()
         
     }
     
    
     
     @IBAction func tapped(_ sender: Any) {
-        self.confetti!.stopConfetti()
+        confetti.startConfetti()
         print("Tapped!!")
+        
     }
     
 
