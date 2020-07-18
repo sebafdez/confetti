@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 class ViewController: UIViewController {
     
 
@@ -79,7 +78,36 @@ class ViewController: UIViewController {
         print("View Load")
         // Do any additional setup after loading the view.
         view.layer.addSublayer(confettiLayer)
+        self.addBehaviors()
         
+    }
+    
+    func addBehaviors() {
+        self.confettiLayer.setValue([
+            horizontalWaveBehavior(),
+            verticalWaveBehavior()
+        ], forKey: "emitterBehaviors")
+    }
+    
+    func horizontalWaveBehavior() -> NSObject {
+        let behavior = createBehavior(type: "kCAEmitterBehaviorWave")
+        behavior.setValue([100, 0, 0], forKeyPath: "force")
+        behavior.setValue(0.5, forKeyPath: "frequency")
+        return behavior
+    }
+
+    func verticalWaveBehavior() -> NSObject {
+        let behavior = createBehavior(type: "kCAEmitterBehaviorWave")
+        behavior.setValue([0, 500, 0], forKeyPath: "force")
+        behavior.setValue(3, forKeyPath: "frequency")
+        return behavior
+    }
+    
+    func createBehavior(type: String) -> NSObject {
+        let behaviorClass = NSClassFromString("CAEmitterBehavior") as! NSObject.Type
+        let behaviorWithType = behaviorClass.method(for: NSSelectorFromString("behaviorWithType:"))!
+        let castedBehaviorWithType = unsafeBitCast(behaviorWithType, to:(@convention(c)(Any?, Selector, Any?) -> NSObject).self)
+        return castedBehaviorWithType(behaviorClass, NSSelectorFromString("behaviorWithType:"), type)
     }
     
     @IBAction func tapped(_ sender: Any) {
