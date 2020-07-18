@@ -63,6 +63,11 @@ class ViewController: UIViewController {
             cell.spinRange = 8
             cell.velocityRange = 100
             cell.yAcceleration = 150
+            // add plane rotation in 3 axis
+            cell.setValue("plane", forKey: "particleType")
+            cell.setValue(Double.pi, forKey: "orientationRange")
+            cell.setValue(Double.pi / 2, forKey: "orientationLongitude")
+            cell.setValue(Double.pi / 2, forKey: "orientationLatitude")
 
             return cell
         }

@@ -49,6 +49,7 @@
 		09163B3524BFFF7E00D03155 /* TestConfettiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestConfettiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09163B3924BFFF7E00D03155 /* confettiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = confettiUITests.swift; sourceTree = "<group>"; };
 		09163B3B24BFFF7E00D03155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09D7807A24C363D40093D108 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 		09163B0B24BFFF7D00D03155 = {
 			isa = PBXGroup;
 			children = (
+				09D7807A24C363D40093D108 /* README.md */,
 				09163B1624BFFF7D00D03155 /* confetti */,
 				09163B2D24BFFF7E00D03155 /* confettiTests */,
 				09163B3824BFFF7E00D03155 /* confettiUITests */,
